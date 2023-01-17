@@ -53,7 +53,7 @@
         <section class="hero-section">
             <div class="container">
                 <h1 class="section-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="section-button" type="button">Замовити послугу</button>
+                <button class="section-button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <!-- Особливості -->
@@ -105,9 +105,31 @@
             <div class="container">
                 <h2 class="about-title" >Чим ми займаємося</h2>
                 <ul class="about-list" >
-                   <li class="about-picture"><img src="./images/technology/img1.jpg" alt="клавіатура" width="370"></li>
-                   <li class="about-picture"><img src="./images/technology/img2.jpg" alt="ноутбук" width="370"></li>
-                   <li class="about-picture"><img src="./images/technology/img3.jpg" alt="планшет" width="370"></li>
+                    <li class="about-picture">
+                        <div class="about-photo">
+                          <img class="about-img" src="./images/technology/img1.jpg" alt="клавіатура" width="370">
+                          <div class="about-overlay">
+                            <p class="about-text">Десктопні додатки</p>
+                          </div>
+                        </div>
+                    </li>
+                    <li class="about-picture">
+                        <div class="about-photo">  
+                           <img class="about-img" src="./images/technology/img2.jpg" alt="ноутбук" width="370">
+                           <div class="about-overlay">
+                            <p class="about-text">Мобільні додатки</p>
+                           </div>
+                        </div>
+                    </li>
+                    <li class="about-picture">
+                        <div class="about-photo">
+                           <img class="about-img" src="./images/technology/img3.jpg" alt="планшет" width="370">
+                           <div class="about-overlay">
+                            <p class="about-text">Дизайнерські рішення</p>
+                           </div>
+                        </div>
+                    </li>
+                    
                 </ul>
               </div>
         </section>
@@ -365,5 +387,15 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-button" type="button" data-modal-close>
+                <svg class="modal-close" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
